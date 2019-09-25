@@ -1,16 +1,19 @@
 <html>
-  <head>
-   <script src="jquery-3.4.1.min.js"></script>
-  
-     <form>
-       I accept <input type="checkbox" name="I accept" value="accept">
-  
-</head>
-
-<body>
-
-
-<button> submit </button>
-
-</body>
+    <head>
+            <script type='text/javascript' src='http://code.jquery.com/jquery.min.js'></script>
+        <script>
+$(document).ready(function() {
+    var $submit = $('input[type="submit"]');
+    $submit.prop('disabled', true);
+    $('input[type="text"]').on('input change', function() { 
+        $submit.prop('disabled', !$(this).val().length);
+    });
+});
+        </script>
+    </head>
+    <body>
+        Username: <input type="text">
+        <input type="submit" id="btnSubmit">
+        
+    </body>
 </html>

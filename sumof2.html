@@ -1,0 +1,28 @@
+<html>
+ <head> 
+  <script type="text/javascript">
+  function check()
+  {
+      var num1=parseInt(document.getElementById("n1").value);
+      var num2=parseInt(document.getElementById("n2").value);
+      if(num1>=0 && num2>=0) 
+      {
+
+      alert("sum is " + `${(num1+num2)}`) }
+      else 
+      {
+          alert("no sum");
+      }
+  }
+  </script>
+  </head>
+  <body>
+      <form>
+          Number 1 <input type="text" name="n1" id="n1">
+          <br/>
+          Number 2 <input type="text" name="n2" id="n2">
+          <input type="button" value="Go" onclick="check()">
+      </form>
+  </body>
+
+  

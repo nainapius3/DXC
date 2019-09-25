@@ -1,0 +1,21 @@
+<html>
+
+<head>
+<script type="text/javascript">
+ 
+      function one(outer_arg) {
+          function inner(inner_arg) {
+                 return outer_arg + inner_arg;                      //ans in F12 console
+  }
+  return inner;
+      }
+    
+      var a=one(5);
+      console.log(a(4));
+      console.log(a(3));
+      console.dir(a);
+
+</script>
+</head>
+
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            var myVideo =document.getElementById("video1");
+            function playPause(){
+                if(myVideo.paused){
+                   myVideo.play();}
+                   else{
+                   myVideo.pause();
+                }
+            function makeSmall(){
+                myVideo.width=320;
+            }
+            function makeBig(){
+                myVideo.width=420;
+            }
+            function makeNormal(){
+                myVideo.width=560;
+            }
+        }
+
+
+        </script>
+    </head>
+    <body>
+        <input type = "button" name="play/pause" value="Play/Pause" id="a" onclick="playPause()">
+        <input type = "button" name="big" value="big" id="a" onclick="makeBig()">
+        <input type = "button" name="small" value="small" id="b" onclick="makeSmall()">
+        <input type = "button" name="normal" value="normal" id="c"onclick="makeNormal()">
+        <video control height = 600 width = 500  poster=""  id="video1"> 
+            <source src="senorita.mp4"  type="video/mp4">
+            </video>
+        
+    </body>
+</html>

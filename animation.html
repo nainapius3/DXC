@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+div {
+    width :100px;
+    height: 100px;
+    background: pink;
+    position: relative;
+
+    animation-name:abc;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction:alternate;
+    animation-play-state:running;
+}
+@keyframes abc {
+    0% { background:pink; left:0px; top:0px; }
+    25% { background:blue ; left:400px; top:0px; }
+    50% { background:  green;left:400px; top:200px; }
+    75% { background:lime; left:0px; top:200px; }
+    100% { background:maroon; left:0px; top:0px; }
+}
+</style>
+</head>
+<body>
+    <div> <img src="flag.png" height="50" width="50"></div>
+</body>
+</html> 

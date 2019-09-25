@@ -1,0 +1,60 @@
+<html> 
+  <head>
+    <script type="text/javascript">
+    function addTwoNos() {
+        var result=confirm("Do u want to continue?")
+    
+    if(result==true)
+    {
+        var n1=parseInt(prompt("Enter first number:","NA"))
+        var n2=parseInt(prompt("Enter second number:","NA"))
+        alert(`${n1} + ${n2} = ${n1+n2}`)
+
+    }
+    else
+    {
+        alert("Then why visit *** ***")
+    }
+    }
+    function displayMessage() {
+        var d= new Date();
+        if(d.getHours()>11)
+        {
+            alert("Good Afternoon")
+
+        }
+        else if(d.getHours()>18) 
+        {
+            alert("Good Evening")
+        }
+        else {
+        alert("good morning!!") }
+    
+     function roomTemperature(){
+         temp=32
+         return temp
+     }
+        function displayTempStatus() {
+        var t=roomTemperature()
+        if(t>30)
+        { aler("TOO HOT") }
+        else{
+            alert("TOO COLD")
+        }
+        
+     }
+    }
+
+
+    
+      </script>
+      </head>
+
+      <body>
+         <input type="button" value="AddNumbers" onclick="addTwoNos()">
+         <input type="button" value="DisplayMessage" onclick="displayMessage()">
+         <input type="button" value="Room Temperature" onclick="displayTempStatus()">
+
+
+      </body>
+      </html>

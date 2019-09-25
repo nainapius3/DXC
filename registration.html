@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        var pass1=document.getElementById(p).value
+        var pass2=document.getElementById(cp).value
+        function comparePass()
+        {
+          if(pass1!=pass2)
+          {
+              alert("Passwords Do not match")
+          }
+          else
+          {
+
+          }
+
+        }   
+            </script>
+    </head>
+    <body  bgcolor="pink">
+        <h1 align="center">Registration Form</h1>
+        <table>
+
+       <form method="GET" action="success.html" onsubmit="return comparePASS()">
+        Userame: <input type="text"  id="name"/> <br/><br/><br/>
+         Password: <input type="password"  id="p"/> <br/><br/><br/>
+         Confirm Password: <input type="password"  id="cp"/> <br/><br/><br/>
+         Gender: Male<input type="radio" name="gender" value="male" id="male"> Female<input type="radio" name="gender" value="female" id="female"><br/><br/><br/>
+         Qualification:<select name="select">
+             <option value="MCA"></option> 
+             <option value="MBA"></option> 
+             <option value="BCA"></option> 
+             <option value="MD"></option> 
+             <option value="MBBS"></option>
+         </select> <br/>
+         Alert By:  Email <input type="checkbox" name="Email" value="email">
+         Mobile<input type="checkbox" name="mobile" value="mobile">
+         Fax<input type="checkbox" name="fax" value="fax"> <br/>
+         <input type="submit" name="login" id="login">
+
+    </form>
+
+    </body>
+</html>

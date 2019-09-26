@@ -1,0 +1,80 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <script>
+    function check()
+    {
+       var product=document.getElementById("product").value;
+       var order=document.getElementById("order").value;
+       var s1=document.getElementById("s1");
+        var s2=document.getElementById("s2");
+        s1.innerHTML =""
+        s2.innerHTML =""
+    if(product.charAt(0)!='P' && product.length<6)
+    {
+       s1.innerHTML="product must start with P and should have atleast 5 digits"
+       return false
+    }
+    if(order.charAt(0)!='O'||order.charAt(1)!='D'){
+        s2.innerHTML="error"
+        return false;
+    }
+    }
+    
+    </script>
+    <style>
+
+    </style>
+    </head>
+    <body>                    
+        <h2>
+                            <center>Cybershopee</center>
+                        </h2>
+
+         <form action="success.html" onsubmit="check()" validate>
+                    
+                            <table cellspacing="10" cellpadding="10" align="center">
+                    
+                                <tr>
+                                    <td>Product ID</td>
+                                    <td><input type="text" name="Product" id="product" required/></td>
+                                    <td><span id="s1"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Order ID</td>
+                                    <td><input type="text" name="order" id="order" required /> </td>
+                                    <td><span id="s2"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Date of Purchase</td>
+                                    <td><input type="date" name="dat" id="date" required /> </td>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td><input type="text" name="name" id="name" required /> </td>
+                                </tr>
+                                <tr>
+                                        <td>Address</td>
+                                        <td><input type="text" name="address" id="address" required /> </td>
+                                </tr>
+                                <tr>
+                                        <td>Quantity</td>
+                                        <td><input type="number" name="quantity" id="quantity" required /> </td>
+                             </tr>
+                             <tr>
+                                    <td>Price per unit</td>
+                                    <td><input type="number" name="price" id="price" required /> </td>
+                                </tr>
+                            <tr>
+                                <td><input type="submit" class="btn btn-success" name="in" id="in" onclick="check()" value="submit"></td>
+                            </tr>
+                            </table>        
+                    
+                            
+                            
+                       
+                        </form>
+        
+    </body>
+</html>
